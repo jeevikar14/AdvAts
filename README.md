@@ -10,37 +10,52 @@ experience levels, recommend jobs, and predict recruiter decisions.
 ✨Key Capabilities
 
 ATS resume scoring (0–100) with explainable breakdowns
+
 Automatic resume classification into job categories
+
 Experience-level detection (Entry / Mid / Senior) via clustering
+
 Job recommendations filtered by skills, experience, location
+
 AI career assistant for resume feedback and guidance
+
 Recruiter decision prediction (hire / reject prioritization)
 
 🚀Features 
 
 Intelligent Resume Scoring: Keyword + semantic scoring; ML refinement
+
+
 Resume Classification: TF-IDF + optimized classifiers for 25 categories
+
 Experience Detection: Engineered features, PCA, K-Means clustering
+
 Job Recommender: Real-time job search via SerpAPI integration
+
 AI Career Assistant: Google Gemini-based feedback & suggestions
+
 Recruiter Prediction: Uses embeddings to model historical decisions
 
 🔧Quick Tech Stack
 
 ML / AI: scikit-learn, SentenceTransformers, NumPy, Pandas
+
 LLM / Feedback: Google Gemini 
+
 Web / UI: Streamlit
+
 DB: SQLite
+
 APIs: SerpAPI (jobs), Google Generative AI (feedback)
 
 🎯Getting Started
 
 Prerequisites
 Python 3.8+
-pip
+
 Clone & Install
 git clone https://github.com/jeevikar14/AdvAts
-cd AdvAts
+
 pip install -r requirements.txt
 
 🔐Environment
@@ -101,6 +116,7 @@ Experience Clustering: Silhouette ≈ 0.41 (PCA + K-Means)
 🎯Use Cases
 
 Job Seekers: instant ATS score, actionable feedback, role matching.
+
 Recruiters: automated screening, candidate ranking, experience filtering.
 
 🧪Testing
@@ -123,14 +139,19 @@ Get keys from respective provider dashboards and place them in .env.
 📌Notes
 
 Resume DB in database/ats_db.sqlite.
+
 Uploaded files saved in uploads/.
+
 Predictions run locally except optional external API calls.
 
 📄Acknowledgments
 
 Dataset: UpdatedResumeDataset.csv 
+
 Sentence Transformers by UKPLab
+
 Google Gemini AI
+
 SerpAPI for job search
 
 
